@@ -1,10 +1,10 @@
 body {
   background-color: black;
   font-family: "League Spartan", sans-serif;
+  color: white;
 }
 
 h2 {
-  color: white;
   text-align: center;
   text-transform: uppercase;
   margin-top: 150px;
@@ -12,11 +12,20 @@ h2 {
 
 .flex-container {
   display: flex;
+  justify-content: center !important;
+  margin-top: 100px;
 }
 
 .flex-container > div {
-  background-color: #f1f1f1;
+  background-color: rgba(0, 0, 255, 0.308);
+  color: rgba(240, 113, 113, 0.979);
   margin: 10px;
   padding: 20px;
   font-size: 30px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bolder;
+  margin-left: 30px;
 }
