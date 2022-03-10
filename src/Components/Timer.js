@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const defaultTime = {
   days: "00",
@@ -8,8 +8,18 @@ const defaultTime = {
   seconds: "00",
 };
 
-const Timer = () => {
+const Timer = ({ countdownTimestampMs }) => {
   const [remainingTime, setRemainingTime] = useState(defaultTime);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      updateRemainingTime(countdownTimestampMs);
+    }, 1000);
+    return () => clearTimeout(intervalId);
+  }, []);
+
+  function updateRemainingTime(countdown) {}
+
   return (
     <div className="flex-container">
       <div>{remainingTime.days}</div>
