@@ -1,12 +1,21 @@
 import React from "react";
+import { useState } from "react";
+
+const defaultTime = {
+  days: "00",
+  hours: "00",
+  minutes: "00",
+  seconds: "00",
+};
 
 const Timer = () => {
+  const [remainingTime, setRemainingTime] = useState(defaultTime);
   return (
     <div className="flex-container">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
+      <div>{remainingTime.days}</div>
+      <div>{remainingTime.hours}</div>
+      <div>{remainingTime.minutes}</div>
+      <div>{remainingTime.seconds}</div>
     </div>
   );
 };
