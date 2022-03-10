@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 
-export function getRemainingTimeUntilMsTimestamo(timestampMs) {
+export function getRemainingTimeUntilMsTimestamp(timestampMs) {
   return {
     days: "14",
     hours: "00",
