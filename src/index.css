@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Kanit", sans-serif;
   color: white;
   position: relative;
 }
@@ -13,8 +13,12 @@ h2 {
 
 h3 {
   position: absolute;
-  font-size: 20px;
+  bottom: -40px;
+
+  font-size: 10px;
+  font-weight: 200px;
   color: white;
+  text-align: center;
 }
 
 .flex-container {
