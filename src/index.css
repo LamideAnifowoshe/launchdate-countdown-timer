@@ -11,6 +11,12 @@ h2 {
   margin-top: 150px;
 }
 
+h3 {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+}
+
 .flex-container {
   display: flex;
   justify-content: center !important;
