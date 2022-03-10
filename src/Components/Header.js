@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div>
       <h2>We're launching soon</h2>
-      <Timer />
+      <Timer countdownTimestampMs={1643673600000} />
       <Footer />
     </div>
   );
